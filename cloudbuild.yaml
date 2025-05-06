@@ -1,7 +1,7 @@
 steps:
 
   - options:
-    logging: CLOUD_LOGGING_ONLY
+      logging: CLOUD_LOGGING_ONLY
 
     # build the container image using doccker
   - name: gcr.io/cloud-builders/docker
@@ -41,7 +41,7 @@ steps:
         "--cpu",
         "1",
         "--memory",
-        "128Mib",
+        "128Mi",
         "--update-env-vars",
         "SERVICE=$REPO_NAME,PROJECT_NAME=$PROJECT_ID,PROJECT_NUMBER=$PROJECT_NUMBER"
       ]
