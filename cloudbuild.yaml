@@ -43,5 +43,5 @@ steps:
         "SERVICE=$REPO_NAME,PROJECT_NAME=$PROJECT_ID,PROJECT_NUMBER=$PROJECT_NUMBER"
       ]
 
-  - options:
-      logging: CLOUD_LOGGING_ONLY
+options:
+  logging: CLOUD_LOGGING_ONLY
