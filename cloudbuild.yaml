@@ -1,8 +1,5 @@
 steps:
 
-  - options:
-      logging: CLOUD_LOGGING_ONLY
-
     # build the container image using doccker
   - name: gcr.io/cloud-builders/docker
     args:
@@ -45,3 +42,6 @@ steps:
         "--update-env-vars",
         "SERVICE=$REPO_NAME,PROJECT_NAME=$PROJECT_ID,PROJECT_NUMBER=$PROJECT_NUMBER"
       ]
+
+  - options:
+      logging: CLOUD_LOGGING_ONLY
