@@ -1,7 +1,7 @@
 import http.server
 import os
 
-DIRECTORY = "src"
+DIRECTORY = "docs"
 PORT = 8080
 
 class CustomHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):

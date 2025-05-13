@@ -1,3 +1,0 @@
-# CAMP APOLLO
-
-Coming Soon.
